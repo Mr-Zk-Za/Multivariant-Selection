@@ -1,1 +1,167 @@
 
+{% comment %}
+  Renders product variant options
+
+  Accepts:
+  - product: {Object} product object.
+  - option: {Object} current product_option object.
+  - block: {Object} block object.
+
+
+  Usage:
+  {% render 'product-variant-options',
+    product: product,
+    option: option,
+    block: block
+  %}
+{% endcomment %}
+{%- liquid
+  assign variants_available_arr = product.variants | map: 'available'
+  assign variants_option1_arr = product.variants | map: 'option1'
+  assign variants_option2_arr = product.variants | map: 'option2'
+  assign variants_option3_arr = product.variants | map: 'option3'
+
+  assign product_form_id = 'product-form-' | append: section.id
+-%}
+
+{%- for value in option.values -%}
+  {%- liquid
+    assign option_disabled = true
+
+    for option1_name in variants_option1_arr
+      case option.position
+        when 1
+          if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+            assign option_disabled = false
+          endif
+        when 2
+          if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+            assign option_disabled = false
+          endif
+        when 3
+          if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+            assign option_disabled = false
+          endif
+      endcase
+    endfor
+  -%}
+  {% capture variant_options %}
+    <input
+      {% if option.name == 'Color' %}
+        type="radio"
+      {% else %}
+        type="checkbox"
+      {% endif %}
+      optionName="{{ option.name }}"
+      id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      name="{{ option.name }}"
+      value="{{ value | escape }}"
+      form="{{ product_form_id }}"
+      {% if option.selected_value == value %}
+        checked
+      {% endif %}
+      {% if option_disabled %}
+        class="disabled"
+      {% endif %}
+    >
+    {% if option.name == 'Color' %}
+      {% capture color %}
+    {% if value == 'Dark Grey' %}
+      style="background-color: #494A4A;"
+    {% elsif value == 'Light Grey' %} 
+      style="background-color: #CCCCCC;"
+    {% elsif value == 'Jade White' %} 
+      style="background-color: #DCEFDC;"
+    {% elsif value == 'Coffee' %} 
+      style="background-color: #6F4E37;"      
+    {% elsif value == 'Lake Blue' %} 
+      style="background-color: #008c96;"
+    {% elsif value == 'Orange' %} 
+      style="background-color: #FFA500;"
+    {% elsif value == 'Mustard Yellow' %} 
+      style="background-color: #FFDB58;"
+    {% elsif value == 'Cypress Green' %} 
+      style="background-color: #567256;"
+    {% elsif value == 'Metal Grey' %} 
+      style="background-color: #BEC1BD;"
+    {% elsif value == 'Yellow' %} 
+      style="background-color: #FFFF00;"
+    {% else %}
+      style="background-color: #ffffff;"    
+    {% endif %}
+   {% endcapture %}
+    {% endif %}
+    <label
+      for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      {% if option.name == 'Color' %}
+        {{ color }}
+      {% endif %}
+    >
+      <span class="visually-hidden testing">{{ value -}}</span>
+
+      {% if option.name == 'Covers' %}
+        {% assign value_to_check = value %}
+        {% for variant in product.variants %}
+          {% if variant.title contains value_to_check %}
+            {% assign dataVariant = variant.title | split: ' /' %}
+            {% if forloop.index == 1 %}
+              {% assign loopColors = 'active-variant' %}
+            {% endif %}
+            <div class="options-image-wrapper not-active">
+              {{
+                variant.featured_image
+                | image_url: width: 100
+                | image_tag: class: 'custom-class', data-variant: dataVariant[0]
+              }}
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      {% unless option.name == 'Color' %}
+        <span class="{{ option.name }}-value"> {{ value -}}</span>
+      {%- endunless %}
+      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+    </label>
+  {% endcapture %}
+
+  {%- if block.settings.picker_type == 'button' -%}
+    {% unless option.name == 'Covers' %}
+      {{ variant_options }}
+    {% endunless %}
+    {% if option.name == 'Covers' %}
+    {% endif %}
+  {%- endif -%}
+{%- endfor -%}
+{% if option.name == 'Covers' %}
+  {%- for value in option.values -%}
+    {% assign value_to_check = value %}
+    {% for variant in product.variants %}
+      {% if variant.title contains value_to_check %}
+        {% assign dataVariant = variant.title | split: ' /' %}
+        <div class="cover-content">
+          <input
+            type="checkbox"
+            optionName="{{ option.name }}"
+            id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+            name="{{ option.name }}"
+            value="{{ value | escape }}"
+            form="{{ product_form_id }}"
+            {% if option_disabled %}
+              class="disabled"
+            {% endif %}
+          >
+          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+            <div class="options-image-wrapper not-active">
+              {{
+                variant.featured_image
+                | image_url: width: 100
+                | image_tag: class: 'custom-class', data-variant: dataVariant[0], data-variant-title: variant.title
+              }}
+              <span class="cover-name">{{ variant.option2 | remove: 'Cover' }}</span>
+            </div>
+          </label>
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endif %}
