@@ -1,0 +1,1511 @@
+@font-face {
+  font-family: "Futura";
+  src: url("https://cdn.shopify.com/s/files/1/0788/4377/3241/files/Futura-Bold.woff2?v=1705468702")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Extra Black";
+  src: url("https://cdn.shopify.com/s/files/1/0788/4377/3241/files/FuturaBT-ExtraBlack.woff2?v=1705468702")
+    format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Normal";
+  src: url("https://cdn.shopify.com/s/files/1/0788/4377/3241/files/FuturaBT-Book.woff2?v=1705468703")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Bold";
+  src: url("https://cdn.shopify.com/s/files/1/0788/4377/3241/files/FuturaBT-BoldCondensed.woff2?v=1705468703")
+    format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Light";
+  src: url("https://cdn.shopify.com/s/files/1/0788/4377/3241/files/FuturaBT-Light.woff2?v=1705468702")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Medium Condensed";
+  src: url("https://cdn.shopify.com/s/files/1/0788/4377/3241/files/FuturaBT-MediumCondensed.woff2?v=1705468702")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Light Condensed";
+  src: url("https://cdn.shopify.com/s/files/1/0788/4377/3241/files/FuturaBT-LightCondensed.woff2?v=1705468703")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Medium BT";
+  src: url("https://cdn.shopify.com/s/files/1/0788/4377/3241/files/FuturaBT-Medium.woff2?v=1705468702")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Extra Black";
+  src: url("https://cdn.shopify.com/s/files/1/0788/4377/3241/files/FuturaBT-ExtraBlack.woff2?v=1705468702")
+    format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Condensed Light";
+  src: url("https://cdn.shopify.com/s/files/1/0788/4377/3241/files/Futura-CondensedLight.woff2?v=1705468702")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Book Antiqua";
+  src: url("https://cdn.shopify.com/s/files/1/0788/4377/3241/files/BookAntiqua.woff2?v=1705473559")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.product__info-container
+  > *
+  + *:not(.preview-order-label-wrapper, .preview-order-block) {
+  margin: 2.7rem 0;
+}
+
+.cover-category-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cover-category-inner-1 {
+  color: #d89d73;
+  font-family: Futura Light;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.cover-category-inner-2 {
+  color: #000;
+  font-family: Futura Light;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.product__title h1 {
+  color: #424242;
+  font-family: Futura;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 49px;
+  text-transform: capitalize;
+}
+
+.feature-points-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+
+.feature-point-icon,
+.feature-point-icon * {
+  line-height: normal;
+}
+
+.feature-point-icon {
+  margin-top: 0.3rem;
+}
+
+.feature-point-inner {
+  display: flex;
+  align-items: start;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  color: #252525;
+  font-family: "Futura Medium BT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: calc(100% / 2 - 10px);
+}
+
+.product .price .price-item.price-item--sale {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.6rem;
+  color: #c25b41;
+  font-family: Book Antiqua;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.product__info-container .price--on-sale .price-item--regular {
+  color: #9d9d9d;
+  font-family: Book Antiqua;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.product .price .badge {
+  background-color: #ffebdd;
+  border-radius: 26px;
+  color: #c25b41;
+  font-family: Futura;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-inline: 12px;
+  padding-block: 8px;
+}
+
+.custom-size-guide-inner {
+  flex-direction: column;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.custom-size-guide-fields {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #efd4c0;
+  background: #fff;
+  padding: 0.6rem 1rem;
+}
+
+.size-guide-measurements {
+  color: #585858;
+  font-family: Futura Medium BT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.custom-size-guide-label {
+  color: #000;
+  font-family: Futura Medium BT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.measure-height-modal-button {
+  border-radius: 31px;
+  border: 1px solid #efd4c0;
+  background-color: #faf5f1;
+  padding: 9px 20px 9px 10px;
+  margin: unset;
+  cursor: pointer;
+}
+
+.measure-height-modal-button:hover {
+  background-color: #fff1e7;
+}
+
+.measure-height-modal-button span.with-icon {
+  position: relative;
+  padding-left: 25px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.measure-height-modal-button span.with-icon svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.measure-height-modal-button span._ks_text {
+  font-size: 14px;
+  font-family: "Arial";
+}
+
+.measure-height-modal-button svg.kiwi-svg.kiwi-injectable {
+  height: 20px;
+  width: 20px;
+}
+
+.measure-height-modal-button span.with-icon {
+  position: relative;
+  padding-left: 25px;
+}
+
+.measure-height-modal-button span.with-icon svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#KiwiSizingChart button.btn.ks-chart-modal-button.sizing-chart-modal-button {
+  border-radius: 31px;
+  border: 1px solid #efd4c0;
+  background-color: #faf5f1 !important;
+  padding: 9px 20px 9px 10px;
+  margin: unset;
+}
+
+#KiwiSizingChart .btn.ks-chart-modal-button > span {
+  text-decoration: unset;
+}
+
+.product-form__input input[type="radio"] + label {
+  border: unset;
+  border-radius: unset;
+  margin: 0.7rem 0.5rem 0.2rem 0;
+  padding: 1.2rem 2rem;
+  font-size: 1.4rem;
+  line-height: 1;
+  text-align: center;
+  transition: border var(--duration-short) ease;
+  cursor: pointer;
+}
+
+.product-form__input input[type="radio"]:checked + label:after {
+  content: " ";
+  background: black;
+  z-index: 55;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.cover-name {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  color: #252525;
+  font-family: Futura Medium BT;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+fieldset.product-form__input .form__label {
+  color: #000;
+  font-family: Futura Medium BT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.product-form__input input[name="Covers"] + label {
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  border-radius: 10px;
+  border: 1px dotted #d89d73;
+  transition: all 0.3s ease;
+}
+
+.product-form__input input[name="Covers"]:checked + label,
+.product-form__input input[name="Covers"] + label:hover {
+  color: black;
+  border-radius: 10px;
+  border: 1px solid #d89d73;
+  background: #faf5f1;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.product-form__input input[name="Covers"]:checked + label {
+  padding: 1.2rem;
+  padding-bottom: 0.7rem;
+}
+
+.product-form__input input[name="Covers"] + label .options-image-wrapper img {
+  border-radius: 13px;
+  margin-bottom: 1rem;
+  height: 79px;
+  width: 79px;
+}
+
+.product-form__input input[name="Covers"]:checked + label:after {
+  content: unset;
+}
+
+/* Preview ORDER BLOCK */
+span.preview-order-label {
+  color: #000;
+  font-family: Futura Medium BT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.preview-order-block {
+  padding: 2rem;
+  background-color: #f6ebe1;
+  position: relative;
+  margin-top: 5px;
+}
+
+.preview-order-label-wrapper {
+  margin: unset !important;
+}
+
+.preview-order-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.preview-order-product {
+  display: flex;
+  gap: 1.3rem;
+}
+
+span.preview-product-title {
+  color: #252525;
+  text-align: center;
+  font-family: Futura Medium Bt;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.preview-product-color-wrapper {
+  color: #8f8f8f;
+  font-family: Futura Medium BT;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.preview-product-color {
+  margin-top: 2px;
+  width: 17px;
+  height: 9px;
+  display: block !important;
+  border-radius: 13px;
+}
+
+.preview-product-color-name {
+  color: #252525;
+  font-family: Futura Light;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+.preview-product-color-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.preview-product-quantity-and-price-wrapper {
+  color: #666;
+  font-family: Futura Medium BT;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.preview-product-multiply-sign {
+  font-size: 1rem;
+}
+
+.preview-product-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 0.5rem;
+  line-height: normal;
+}
+
+#preview-order-quantity {
+  display: flex;
+  width: 100px;
+  height: 35px;
+}
+
+#preview-order-quantity > * {
+  width: calc(100% / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-order-quantity-wrapper {
+  border: 1px solid #9a9a9a;
+  border-radius: 5px;
+}
+
+.preview-order-minus,
+.preview-order-plus {
+  cursor: pointer;
+}
+
+.preview-order-quantity {
+  color: #252525;
+  text-align: center;
+  font-family: Futura Medium Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.preview-product-image-wrapper {
+  line-height: normal;
+}
+
+.preview-product-image-wrapper img {
+  border-radius: 8px;
+}
+
+button.preview-close {
+  border: unset;
+  padding: unset;
+  background-color: unset;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+}
+
+.quantity-and-atc-wrapper {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+
+.quantity-and-atc-wrapper .product-form__input.product-form__quantity {
+  width: fit-content;
+  flex: unset;
+}
+
+.product-form__buttons {
+  max-width: 100%;
+}
+
+label.quantity__label.form__label {
+  display: none;
+}
+
+label.quantity__label.form__label {
+  display: none;
+}
+
+button.product-form__submit {
+  border: 1px solid #c25b41;
+  color: #c25b41;
+  text-align: center;
+  font-family: Futura;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+button.product-form__submit:before,
+button.product-form__submit:after {
+  box-shadow: unset;
+}
+
+.quantity:before,
+.quantity:after {
+  box-shadow: unset;
+}
+
+.quantity {
+  border: 1px solid #c25b41;
+}
+
+/*Shopify Payment-button   */
+.shopify-challenge__button,
+button.shopify-payment-button__button--unbranded {
+  min-width: calc(12rem + var(--buttons-border-width) * 2);
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  background-color: #c25b41;
+  color: #fff;
+  text-align: center;
+  font-family: Futura;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.button:not([disabled]):hover:after,
+.shopify-challenge__button:hover:after,
+.customer button:hover:after,
+.shopify-payment-button__button--unbranded:hover:after {
+  box-shadow: unset;
+}
+
+.shopify-payment-button__button--unbranded:hover,
+.shopify-payment-button__button--unbranded:hover:not([disabled]) {
+  background-color: #c25b41;
+}
+
+.shopify-challenge__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  padding: 0 3rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #c25b41;
+}
+
+.shopify-challenge__button:before,
+.shopify-payment-button__button--unbranded:before,
+.shopify-payment-button [role="button"]:before {
+  border-radius: var(--buttons-radius-outset);
+  box-shadow: unset;
+}
+
+.shopify-challenge__button:after,
+.customer button:after,
+.shopify-payment-button__button--unbranded:after {
+  border-radius: var(--buttons-radius);
+  box-shadow: unset;
+}
+
+.shopify-challenge__button:hover::after,
+.customer button:hover::after,
+.shopify-payment-button__button--unbranded:hover::after {
+  box-shadow: unset;
+}
+
+.button:focus-visible,
+.button:focus,
+.button.focused,
+.shopify-payment-button__button--unbranded:focus-visible,
+.shopify-payment-button [role="button"]:focus-visible,
+.shopify-payment-button__button--unbranded:focus,
+.shopify-payment-button [role="button"]:focus {
+  box-shadow: unset;
+}
+
+.button:focus:not(:focus-visible):not(.focused),
+.shopify-payment-button__button--unbranded:focus:not(:focus-visible):not(
+    .focused
+  ),
+.shopify-payment-button
+  [role="button"]:focus:not(:focus-visible):not(.focused) {
+  box-shadow: unset;
+}
+
+.shopify-challenge__button {
+  font-size: 1.5rem;
+  line-height: calc(1 + 0.2 / var(--font-body-scale));
+}
+
+/* Modals Style Starts from here   */
+
+legend.form__label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.size-guide-and-color-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.size-guide-height-modal-button {
+  min-height: unset;
+  min-width: unset;
+  width: unset;
+  height: unset;
+  border: unset;
+  background: unset;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.size-guide-height-modal-button .with-icon {
+  display: grid;
+  grid-template-columns: 20px auto;
+  column-gap: 0.5rem;
+  place-items: center;
+}
+
+.size-guide-height-modal-button .with-icon svg {
+  padding-inline: 2px;
+}
+
+.size-guide-height-modal-button span._ks_text {
+  font-size: 14px;
+  font-family: Arial;
+  text-decoration: underline;
+  text-underline-offset: 2.5px;
+}
+
+.size-guide-centemeters-label {
+  font-family: "Futura";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e5b491;
+  line-height: 19px;
+}
+
+.size-guide-table-wrapper {
+  padding: 2rem 2rem;
+}
+
+.size-guide-table {
+  width: 100%;
+}
+
+.size-guide-table-header-cell {
+  font-family: Futura Medium BT;
+  font-size: 16px;
+  color: #252525;
+  padding: 2rem 0;
+  text-align: center;
+  border-bottom: 1px solid #c25b41;
+}
+
+.size-guide-table-header-cell:not(:first-of-type) {
+  border-left: 1px solid #c25b41;
+}
+
+tr.size-guide-table-row:nth-of-type(2) td.size-guide-table-cell {
+  padding-top: 3rem;
+}
+
+.size-guide-table-vertical-header-cell {
+  font-family: Futura Medium BT;
+  font-size: 16px;
+  color: #252525;
+  text-align: left;
+  padding: 0rem 2rem;
+}
+
+table.size-guide-table {
+  border: 1px solid #e5b49120;
+  background-color: #fefaf7;
+  border-spacing: 0px;
+  margin-bottom: 5rem;
+}
+
+tr.size-guide-table-row:nth-of-type(2) td.size-guide-table-cell {
+  padding-top: 3rem;
+}
+
+tr.size-guide-table-row:nth-of-type(5) td.size-guide-table-cell {
+  padding-bottom: 3rem;
+}
+
+td.size-guide-table-cell:not(
+    .size-guide-table-cell.size-guide-table-vertical-header-cell
+  ) {
+  font-family: Futura Medium BT;
+  font-size: 16px;
+  color: #252525;
+  text-align: center;
+  border-left: 1px solid #c25b41;
+}
+
+tr.size-guide-table-row:first-of-type
+  td.size-guide-table-cell.size-guide-table-header-cell:first-of-type {
+  border-left: unset;
+}
+
+div#measure-height-modal-content,
+#size-guide-modal-content {
+  position: fixed;
+  background: #020000b8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  border-radius: 8px;
+  display: none;
+  overflow: auto;
+}
+
+.modal-content-wrapper {
+  height: fit-content;
+  max-width: 800px;
+  width: 100%;
+  margin-inline: auto;
+  background: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#size-guide-modal-content .modal-content-wrapper {
+  top: 80%;
+}
+
+.modal-header {
+  background-color: #e5b491;
+  color: #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  font-family: Futura Medium BT;
+  font-size: 20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#size-guide-modal-content .modal-subheading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#size-guide-modal-content .modal-subheading p {
+  margin: unset;
+}
+
+/* body:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #020000b8;
+  top: 0;
+  z-index: 5;
+} */
+/* Product Images Style */
+.thumbnail img,
+.thumbnail {
+  border-radius: 6px;
+}
+
+.product__media.media.media--transparent img,
+.product__media.media.media--transparent {
+  border-radius: 6px;
+}
+
+button#measure-close,
+button#size-guide-close {
+  background: unset;
+  border: unset;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-subheading {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  font-family: Futura Medium BT;
+  color: #000000;
+}
+
+.seat-cover-block {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  padding-inline: 1.5rem;
+  align-items: flex-start;
+  column-gap: 2rem;
+}
+
+span.cover-label {
+  font-family: futura;
+  font-size: 20px;
+  color: #e5b491;
+}
+
+.cover-details-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+p.detail-label {
+  margin: unset;
+  font-family: futura;
+  color: #252525;
+  font-size: 16px;
+}
+
+span.detail-value {
+  color: #252525;
+  font-family: Futura Medium BT;
+}
+
+.cover-details-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.2rem;
+  padding-top: 3rem;
+  gap: 2rem;
+  background-color: #fefaf7;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.cover-icons {
+  width: 100%;
+  max-width: 100%;
+  margin-inline: auto;
+  height: 150px;
+  position: relative;
+  display: flex;
+}
+
+.cover-icons svg,
+.cover-icons img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+hr.block-divider {
+  margin-block: 2.5rem;
+  width: calc(100% - 7rem);
+  margin-inline: auto;
+}
+
+center.size-guide-footer-note {
+  padding-bottom: 5rem;
+  color: #c25b41;
+  text-transform: uppercase;
+  font-family: "Futura";
+  font-size: 18px;
+}
+
+/* ######### Styling by AH Start's Here ######### */
+
+/* More Payment Button */
+.product__info-container .shopify-payment-button__more-options {
+  display: none;
+}
+
+/* Payment Icons */
+.product__info-container .cc__footer-payments {
+  margin: 0;
+}
+
+.product__info-container .cc__footer-payments .list-payment {
+  justify-content: center;
+}
+
+/* Add on products slider */
+.recommended-products-wrapper {
+  margin: 0;
+}
+
+.recommended-products-wrapper .add-on-label {
+  color: #717171;
+  margin: 0 0 0.8rem;
+}
+
+.recommended-products-wrapper {
+  position: relative;
+}
+
+.recommended-product-container .slick-slide {
+  margin-right: 1rem;
+}
+
+.recommended-product-container .product-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recommended-product-container .product-block .start_box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.start_box .recommended-product-image {
+  border-radius: 7px;
+}
+
+.start_box .recommended-product-image a {
+  /* display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px; */
+}
+
+.start_box .recommended-product-image img {
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.start_box .recommended-product-info {
+  padding: 1.5rem;
+}
+
+.start_box .recommended-product-info .title_wrapper a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Book Antiqua;
+  font-size: 1.8rem;
+  color: #252525;
+  line-height: normal;
+}
+
+.start_box .recommended-product-info .prices-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.start_box .recommended-product-info .prices-wrapper .price,
+.start_box .recommended-product-info .prices-wrapper .compare-price {
+  font-family: Futura Light;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: #454545;
+  letter-spacing: 0;
+}
+
+.start_box .recommended-product-info .prices-wrapper .compare-price {
+  text-decoration: line-through;
+}
+
+.recommended-products-wrapper .product-form__buttons {
+  max-width: unset;
+}
+
+.recommended-products-wrapper .product-form__buttons .product-form__submit {
+  font-size: 1.6rem;
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  margin-bottom: 0;
+  min-width: 94px;
+  min-height: 34px;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.recommended-products-wrapper
+  .product-form__buttons
+  .product-form__submit:hover {
+  background: transparent;
+  border-color: #c25b41;
+  color: #c25b41;
+}
+
+.recommended-products-wrapper
+  .product-form__buttons
+  .product-form__submit::before,
+.recommended-products-wrapper
+  .product-form__buttons
+  .product-form__submit::after {
+  display: none;
+}
+
+.recommended-products-wrapper .slide-arrow {
+  position: absolute;
+  top: -3rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.recommended-products-wrapper .slide-arrow.slick-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.recommended-products-wrapper .slide-arrow.prev-arrow {
+  right: 35px;
+}
+
+.recommended-products-wrapper .slide-arrow.next-arrow {
+  right: 0;
+}
+
+.product__info-container .custom-inventry-status-content-wrapper {
+  line-height: 100%;
+
+  .inventory-content-inner {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+progress#inventry-progress {
+  width: 100%;
+  height: 8px;
+  border-radius: unset;
+  background-color: lightgrey;
+}
+
+label[for="inventory-progress"] {
+  color: #252525;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: Futura Normal;
+  font-weight: 600;
+  padding-left: 0rem;
+}
+
+span#ship-by {
+  color: #252525;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: Futura Normal;
+  font-weight: 600;
+}
+
+span.in-stock-badge {
+  color: #252525;
+  font-family: futura;
+  font-size: 14px;
+}
+
+span.in-stock-badge:before {
+  content: " ";
+  position: relative;
+  width: 10px;
+  display: inline-block;
+  height: 10px;
+  background-color: #75d100;
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+
+[data-stock="false"] span.in-stock-badge:before {
+  background-color: #f44336;
+}
+
+progress::-webkit-progress-value {
+  background-color: #545454;
+}
+
+progress::-moz-progress-bar {
+  background-color: lightgrey;
+}
+
+progress::-webkit-progress-bar {
+  background-color: lightgrey;
+}
+
+progress {
+  background-color: lightgrey;
+}
+
+/* Custom Collapsible row / Accordion */
+.custom-collaislbe_row_item {
+  margin: 0 !important;
+  border-bottom: 1px solid #cecece;
+}
+
+.custom-collaislbe_row_item .quest_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  cursor: pointer;
+}
+
+.custom-collaislbe_row_item .quest_wrapper .title {
+  font-family: Futura Normal;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #252525;
+  margin: 0;
+}
+
+.custom-collaislbe_row_item .quest_wrapper svg {
+  transition: all 0.3s ease;
+}
+
+.custom-collaislbe_row_item .quest_wrapper svg.rotate-icon {
+  transform: rotate(180deg);
+}
+
+.custom-collaislbe_row_item .c_collapsible_content {
+  display: none;
+}
+
+.custom-collaislbe_row_item .c_collapsible_content p,
+.custom-collaislbe_row_item .c_collapsible_content li {
+  margin-top: 0;
+  line-height: 1.6;
+}
+
+/* Icon with Text v2 */
+.iwt_v2_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border: 1px solid #efd4c0;
+  background: #faf5f1;
+  padding: 1rem 0;
+}
+
+.iwt_v2_container .iwt-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1.5rem;
+  border-right: 1px solid #ddd;
+}
+
+.iwt_v2_container .iwt-box:nth-child(2) {
+  /* border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd; */
+}
+
+.iwt_v2_container .iwt-box:last-child {
+  border-right: 0;
+}
+
+.iwt_v2_container .icon-box {
+  display: flex;
+}
+
+.iwt_v2_container .text-box {
+  font-family: Futura Normal;
+  font-size: 1.4rem;
+  color: #c25447;
+  line-height: normal;
+}
+
+/* ######### Styling by AH End's Here ######### */
+/* MultiVariants   */
+[data-option-type="Covers"] input {
+  position: absolute;
+  visibility: hidden;
+}
+
+fieldset.js.product-form__input[data-option-type="Covers"] {
+  display: grid;
+  grid-template: auto 1fr / repeat(4, minmax(auto, 80px));
+  column-gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+
+  .product-form__input input[name="Covers"] + label {
+    position: relative;
+    display: inline-block;
+    height: 125px;
+    width: 100%;
+
+    .options-image-wrapper.not-active {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      .product-form__input
+        input[name="Covers"]
+        + label
+        .options-image-wrapper
+        img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.product-form__input input[name="Covers"] + label .options-image-wrapper img {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+fieldset.product-form__input[data-option-type="Covers"] .form__label {
+  margin-bottom: 1.5rem;
+}
+
+.cover-content label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-form__input input[name="Covers"]:checked + label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Covers-value {
+  display: inline-block;
+}
+
+#previewBlocks-wrapper {
+  margin: unset;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.preview-label-inactive {
+  display: none;
+}
+
+@media (min-width: 750px) {
+    fieldset.js.product-form__input[data-option-type="Covers"] {
+        grid-template: auto 1fr / repeat(4, minmax(auto, 104px));
+        column-gap: 0px;
+    }
+
+    .cover-name {
+        font-size: 16px;
+    }
+
+    button.product-form__submit {
+        font-size: 20px;
+    }
+
+    .shopify-challenge__button,
+    button.shopify-payment-button__button--unbranded {
+        font-size: 20px;
+    }
+    .feature-point-inner {
+        width: calc(100% / 4 - 10px);
+        min-width: 120px;
+    }
+
+    .feature-points-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+
+    .thumbnail-slider {
+        display: flex;
+        align-items: center;
+    }
+
+    .thumbnail-list {
+        display: flex;
+        padding: 0.5rem;
+        flex: 1;
+        scroll-padding-left: 0.5rem;
+        position: relative;
+        flex-wrap: inherit;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scroll-padding-left: 1.5rem;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 1rem;
+    }
+
+    .thumbnail-list__item {
+        width: calc(100% / 7 - 10px);
+    }
+
+    .product__media-wrapper .slider-mobile-gutter .slider-button {
+        display: block;
+    }
+    
+    .modal-header {
+        font-size: 34px;
+    }
+
+    .modal-subheading {
+        padding: 3rem;
+    }
+
+    .seat-cover-block {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        padding-inline: 5rem;
+        align-items: flex-start;
+        column-gap: 2rem;
+    }
+
+    .cover-icons {
+        height: 100%;
+    }
+
+    div#measure-height-modal-content {
+        height: 100%;
+    }
+
+    .modal-content-wrapper {
+        height: fit-content;
+        top: 70%;
+        transform: translate(-50%, -50%);
+    }
+
+    #size-guide-modal-content .modal-content-wrapper {
+        top: 70%;
+    }
+
+    center.size-guide-footer-note {
+        font-size: 22px;
+    }
+
+    .size-guide-table-wrapper {
+        padding: 2rem 10rem;
+    }
+}
+@media (max-width: 750px) {
+    .Covers-value {
+        display: inline-block;
+        font-size: 11px;
+        line-height: normal;
+    }
+
+    .preview-product-color-label {
+        display: grid;
+        grid-template: auto auto / auto auto;
+        align-items: center;
+        gap: 0rem;
+    }
+    td.size-guide-table-cell:not(.size-guide-table-cell.size-guide-table-vertical-header-cell) {
+        font-size: 10px;
+        border-left: 1px solid #c25b41;
+    }
+
+    .size-guide-table-header-cell {
+        padding: 1rem 0;
+        border-bottom: 1px solid #c25b41;
+    }
+
+    tr.size-guide-table-row:nth-of-type(2) td.size-guide-table-cell {
+        padding-top: 1.5rem;
+    }
+
+    tr.size-guide-table-row:nth-of-type(5) td.size-guide-table-cell {
+        padding-bottom: 1.5rem;
+    }
+
+    table.size-guide-table {
+        margin-bottom: 2rem;
+    }
+
+    center.size-guide-footer-note {
+        font-size: 14px;
+    }
+
+    .size-guide-table-vertical-header-cell {
+        font-size: 12px;
+        padding: 0rem 0rem;
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #size-guide-modal-content .modal-subheading {
+        font-size: 10px;
+    }
+    .start_box .recommended-product-info .title_wrapper a {
+        font-size: 1.6rem;
+    }
+
+    .start_box .recommended-product-info .prices-wrapper .price,
+    .start_box .recommended-product-info .prices-wrapper .compare-price {
+        font-size: 1.3rem;
+    }
+
+    .recommended-products-wrapper .product-form__buttons .product-form__submit {
+        margin-right: 0;
+        min-width: 88px;
+        padding: 0 25px;
+    }
+    .iwt_v2_container .iwt-box {
+        flex-direction: column;
+    }
+
+    .iwt_v2_container .text-box {
+        text-align: center;
+    }
+}
